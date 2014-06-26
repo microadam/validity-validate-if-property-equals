@@ -4,10 +4,6 @@ module.exports = function validateIfPropertyEquals(property, value, validator) {
     throw new Error('No property to check provided')
   }
 
-  if (!value) {
-    throw new Error('No value to check provided')
-  }
-
   if (!validator || typeof validator !== 'function') {
     throw new Error('No validator function provided')
   }

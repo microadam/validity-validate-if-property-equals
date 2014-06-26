@@ -10,12 +10,6 @@ describe('validity-validate-if-property-equals', function () {
     }, /No property to check provided/)
   })
 
-  it('should throw if no value to check passed', function () {
-    assert.throws(function () {
-      createValidator('property')
-    }, /No value to check provided/)
-  })
-
   it('should throw if no validity function passed', function () {
     assert.throws(function () {
       createValidator('property', 'value')
