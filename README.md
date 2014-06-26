@@ -20,7 +20,7 @@ var validity = require('validity')
   , schemata = require('schemata')
   , save = require('save')
   , collection = save('author')
-  , validateIfPropertySet = require('validity-validate-if-property-set')
+  , validateIfPropertyEquals = require('validity-validate-if-property-equals')
 
 var schema = schemata(
     { type:
@@ -28,7 +28,7 @@ var schema = schemata(
       }
     , url:
       { type: String
-      , validators: { all: [ validateIfPropertySet('type', 'link' validity.url) ] }
+      , validators: { all: [ validateIfPropertyEquals('type', 'link' validity.url) ] }
       }
     })
 
