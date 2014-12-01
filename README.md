@@ -28,7 +28,7 @@ var schema = schemata(
       }
     , url:
       { type: String
-      , validators: { all: [ validateIfPropertyEquals('type', 'link' validity.url) ] }
+      , validators: { all: [ validateIfPropertyEquals('type', 'link', validity.url) ] }
       }
     })
 
