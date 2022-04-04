@@ -1,7 +1,7 @@
 {
   "name": "@clocklimited/validity-validate-if-property-equals",
   "description": "validate the current property if another property is equal to a particular value",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {},
   "main": "validator.js",
   "scripts": {
