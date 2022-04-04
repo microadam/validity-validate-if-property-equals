@@ -15,24 +15,24 @@ npm install validity-validate-if-property-equals --save
 
 Below is a simple example for usage with schemata and save:
 
-``` js
-var validity = require('validity')
-  , schemata = require('schemata')
-  , save = require('save')
-  , collection = save('author')
-  , validateIfPropertyEquals = require('validity-validate-if-property-equals')
+```js
+var validity = require("@clocklimited/validity"),
+  schemata = require("schemata"),
+  save = require("save"),
+  collection = save("author"),
+  validateIfPropertyEquals = require("@clocklimited/validity-validate-if-property-equals");
 
-var schema = schemata(
-    { type:
-      { type: String
-      }
-    , url:
-      { type: String
-      , validators: { all: [ validateIfPropertyEquals('type', 'link', validity.url) ] }
-      }
-    })
-
+var schema = schemata({
+  type: { type: String },
+  url: {
+    type: String,
+    validators: {
+      all: [validateIfPropertyEquals("type", "link", validity.url)],
+    },
+  },
+});
 ```
 
 ## Credits
+
 [Adam Duncan](https://github.com/microadam/)

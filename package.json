@@ -1,5 +1,5 @@
 {
-  "name": "validity-validate-if-property-equals",
+  "name": "@clocklimited/validity-validate-if-property-equals",
   "description": "validate the current property if another property is equal to a particular value",
   "version": "0.0.1",
   "dependencies": {},
@@ -13,7 +13,7 @@
     "prepublish": "npm test && npm prune"
   },
   "publishConfig": {
-    "registry": "http://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   },
   "author": "Adam Duncan <adam.jd@gmail.com>",
   "license": "ISC",
@@ -22,10 +22,10 @@
     "jscs": "1.3.0",
     "jshint": "^2.5.0",
     "mocha": "^1.18.2",
-    "validity": "0.0.3"
+    "@clocklimited/validity": "1.1.3"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:microadam/validity-validate-if-property-equals.git"
+    "url": "git@github.com:clocklimited/validity-validate-if-property-equals.git"
   }
 }
